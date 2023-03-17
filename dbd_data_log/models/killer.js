@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const killerSchema = new mongoose.Schema({
     name: String,
     role: String,
+    img: String,
     power: String,
     perks: {
         perk_1: String,

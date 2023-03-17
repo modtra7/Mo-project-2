@@ -1,6 +1,7 @@
 module.exports = [
     {
         name: 'Dwight Farifield',
+        img: './public/dwight-dbd.jpg',
         role: 'survivor',
         perks: {
             perk_1: 'Bond',
@@ -12,6 +13,7 @@ module.exports = [
     {
         name: 'Meg Thomas',
         role: 'survivor',
+        img: './public/meg-dbd.jpg',
         perks: {
             perk_1: 'Quick & Quiet',
             perk_2: 'Sprint Burst',
@@ -22,6 +24,7 @@ module.exports = [
     {
         name: 'Claudette Morel',
         role: 'survivor',
+        img: './public/claudette-dbd.jpg',
         perks: {
             perk_1: 'Empathy',
             perk_2: 'Botany Knowledge',
@@ -32,6 +35,7 @@ module.exports = [
     {
         name: 'Jake Park',
         role: 'survivor',
+        img: './public/jake-dbd.jpg',
         perks: {
             perk_1: 'Iron Will',
             perk_2: 'Calm Spirit',
@@ -41,6 +45,7 @@ module.exports = [
     },
     {
         name: 'William "Bill" Overbeck',
+        img: './public/bill-dbd.jpg',
         role: 'survivor',
         perks: {
             perk_1: 'Left Behind',
@@ -52,6 +57,7 @@ module.exports = [
     {
         name: 'Nea Karlsson',
         role: 'survivor',
+        img: './public/nea-dbd.jpg',
         perks: {
             perk_1: 'Balanced Landing',
             perk_2: 'Urban Evasion',
@@ -62,6 +68,7 @@ module.exports = [
     {
         name: 'David King',
         role: 'survivor',
+        img: './public/david-dbd.jpg',
         perks: {
             perk_1: "We're Gonna Live Forever",
             perk_2: 'Dead Hard',

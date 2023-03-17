@@ -43,12 +43,36 @@ app.listen(3000, () => {
 //////////////////////////////////////
 
 // ======= REST ROUTES ======= //
-
+// === INDEX === //
 app.get('/dbd', (req, res) => {
     res.render('index.ejs', {
         killers: killerSeed,
         survivors: survivorSeed
     })
 })
-
+// app.get('/dbd/', (req, res) => {
+//     Killer.find({}).then(() => {
+//         res.render()
+//     })
+// })
+// app.get('/dbd/', (req, res) => {
+//     Survivor.find({}).then(() => {
+//         res.render()
+//     })
+// })
+// === NEW === //
+app.get('/dbd/new', (req, res) => {
+    res.render('new.ejs')
+})
+// === SHOW === //
+app.get('/dbd/killer/:id', (req, res) => {
+    Killer.findById(req.params.id).then(() => {
+        res.render('showKiller.ejs')
+    })
+})
+app.get('/dbd/survivor/:id', (req, res) => {
+    Survivor.findById(req.params.id).then(() => {
+        res.render('showSurvivor.ejs')
+    })
+})
 // ======= ACTION ROUTES ======= //

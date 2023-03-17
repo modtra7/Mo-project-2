@@ -2,6 +2,7 @@ module.exports = [
     {
         name: 'The Trapper',
         role: 'killer',
+        img: './public/trapper-dbd.jpg',
         power: 'Bear Trap',
         perks: {
             perk_1: 'Unnerving Presence',
@@ -13,6 +14,7 @@ module.exports = [
     {
         name: 'The Wraith',
         role: 'killer',
+        img: './public/wraith-dbd.jpg',
         power: 'Wailing Bell',
         perks: {
             perk_1: 'Predator',
@@ -24,6 +26,7 @@ module.exports = [
     {
         name: 'The Hillbilly',
         role: 'killer',
+        img: './public/hillbilly-dbd.jpg',
         power: 'The Chainsaw',
         perks: {
             perk_1: 'Enduring',
@@ -35,6 +38,7 @@ module.exports = [
     {
         name: 'The Nurse',
         role: 'killer',
+        img: './public/nurse-dbd.jpg',
         power: "Spencer's Last Breath",
         perks: {
             perk_1: 'Strider',
@@ -46,6 +50,7 @@ module.exports = [
     {
         name: 'The Huntress',
         role: 'killer',
+        img: './public/huntress-dbd.jpg',
         power: 'Hunting Hatchets',
         perks: {
             perk_1: 'Beast of Prey',

@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const survivorSchema = new mongoose.Schema({
     name: String,
     role: String,
+    img: String,
     perks: {
         perk_1: String,
         perk_2: String,
