@@ -11,11 +11,31 @@
     <main>
         <div>
             <h1>Survivor</h1>
-            <ul></ul>
+            <ul>
+                <div>
+                    <% for (let i = 0; i < survivors.length; i++) {%>
+                        <div>
+                            <a href="/dbd/survivors/<%=survivors[i].id%>">
+                                <img src="<%=survivors[i].img%>">
+                            </a>
+                        </div>
+                    <%}%>
+                </div>
+            </ul>
         </div>
         <div>
             <h1>Killer</h1>
-            <ul></ul>
+            <ul>
+                <div>
+                    <% for (let i = 0; i < killers.length; i++) {%>
+                        <div>
+                            <a href="/dbd/killers/<%=killers[i].id%>">
+                                <img src="<%=killers[i].img%>">
+                            </a>
+                        </div>
+                    <%}%>
+                </div>
+            </ul>
         </div>
     </main>
 </body>

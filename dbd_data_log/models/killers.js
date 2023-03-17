@@ -2,7 +2,7 @@ module.exports = [
     {
         name: 'The Trapper',
         role: 'killer',
-        img: './public/trapper-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwcBz4c8w5iGplZw0cAbbpCvHrUnWhe4tU77iBcuiVAfiQBnewx-9Ovx_amQEFrL5uYt8&usqp=CAU',
         power: 'Bear Trap',
         perks: {
             perk_1: 'Unnerving Presence',
@@ -14,7 +14,7 @@ module.exports = [
     {
         name: 'The Wraith',
         role: 'killer',
-        img: './public/wraith-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS19SVADGuu0J43A3G9GRxLhS245yT1kECJOUH8K7a_r84dGulO9jKbV1-36hsVl-KVASw&usqp=CAU',
         power: 'Wailing Bell',
         perks: {
             perk_1: 'Predator',
@@ -26,7 +26,7 @@ module.exports = [
     {
         name: 'The Hillbilly',
         role: 'killer',
-        img: './public/hillbilly-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEEdk1vwpRBWlFtjHZfyD6_VKAE7kOX-qRQBiENKgFYtrx3k2oWGPfKZ2qRQOoUeFqWzA&usqp=CAU',
         power: 'The Chainsaw',
         perks: {
             perk_1: 'Enduring',
@@ -38,7 +38,7 @@ module.exports = [
     {
         name: 'The Nurse',
         role: 'killer',
-        img: './public/nurse-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROMEgPjo4I_SjGblGQEBGAXfBafA5kSr4GeyKcYR-wFh02Y-lC1X-_r3jRhMQURBNjSnE&usqp=CAU',
         power: "Spencer's Last Breath",
         perks: {
             perk_1: 'Strider',
@@ -50,7 +50,7 @@ module.exports = [
     {
         name: 'The Huntress',
         role: 'killer',
-        img: './public/huntress-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VJPPQzoM9gJ7GwdfYD7SIxTr_Y59xShD43TSMvnRv00-SzO2Cs8ejnllyqr5SQFi9k8&usqp=CAU',
         power: 'Hunting Hatchets',
         perks: {
             perk_1: 'Beast of Prey',

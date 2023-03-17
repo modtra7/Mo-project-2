@@ -1,7 +1,7 @@
 module.exports = [
     {
         name: 'Dwight Farifield',
-        img: './public/dwight-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmnQLfFzPPau27VyQ6rTkEmVL4wHWdLjuf-7pSlfTbSv1jWPW2iMugdmsme7a-TzYnZE&usqp=CAU',
         role: 'survivor',
         perks: {
             perk_1: 'Bond',
@@ -13,7 +13,7 @@ module.exports = [
     {
         name: 'Meg Thomas',
         role: 'survivor',
-        img: './public/meg-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRtAdyGGIpWz7CDQ1ooo5yvkhHLXG1uC_RWrjF1bEGqwciBqZ4miNUkA9N3lwNFDZE8sA&usqp=CAU',
         perks: {
             perk_1: 'Quick & Quiet',
             perk_2: 'Sprint Burst',
@@ -24,7 +24,7 @@ module.exports = [
     {
         name: 'Claudette Morel',
         role: 'survivor',
-        img: './public/claudette-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoP5Unrs9LweOr7Jb163NN7O1zZCK1l69l5Ied78zgPndfPA4AZW4ThCubzCDUd_uIQdM&usqp=CAU',
         perks: {
             perk_1: 'Empathy',
             perk_2: 'Botany Knowledge',
@@ -35,7 +35,7 @@ module.exports = [
     {
         name: 'Jake Park',
         role: 'survivor',
-        img: './public/jake-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9UvdvDUUFoWf-utNJpxlcGLlUVIqwemGfmV0PGXLesFcdt7vdBMJm9H1UXNs9R6PXLY4&usqp=CAU',
         perks: {
             perk_1: 'Iron Will',
             perk_2: 'Calm Spirit',
@@ -45,7 +45,7 @@ module.exports = [
     },
     {
         name: 'William "Bill" Overbeck',
-        img: './public/bill-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd3TjIbwe6qSSqQ1AsR74wP5odxL0l7E2deGGmqeChPVxg_iYPSC84iXSm4U9agJjkzA&usqp=CAU',
         role: 'survivor',
         perks: {
             perk_1: 'Left Behind',
@@ -57,7 +57,7 @@ module.exports = [
     {
         name: 'Nea Karlsson',
         role: 'survivor',
-        img: './public/nea-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe2ME4GRLj26ab6SV6VELc0u1zIut6XK9NEQyFOn68mTNRka3DWEqeS4oSG4GFxGNxDGs&usqp=CAU',
         perks: {
             perk_1: 'Balanced Landing',
             perk_2: 'Urban Evasion',
@@ -68,7 +68,7 @@ module.exports = [
     {
         name: 'David King',
         role: 'survivor',
-        img: './public/david-dbd.jpg',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoqdKZjSTX5m2FrLCqgU33B--xB5yDv5Vr4B1_xtme0Wd7aK0ypYDXK3rbIopeu3yLTLU&usqp=CAU',
         perks: {
             perk_1: "We're Gonna Live Forever",
             perk_2: 'Dead Hard',
