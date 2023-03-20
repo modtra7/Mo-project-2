@@ -42,17 +42,22 @@ app.listen(3000, () => {
 
 // ======= REST ROUTES ======= //
 // === INDEX === //
-app.get('/dbd', (req, res) => {
-    res.render('index.ejs', {
-        killers: killerSeed,
-        survivors: survivorSeed
-    })
-})
-// app.get('/dbd/', (req, res) => {
-//     Killer.find({}).then(() => {
-//         res.render()
+// app.get('/dbd', (req, res) => {
+//     res.render('index.ejs', {
+//         killers: killerSeed,
+//         survivors: survivorSeed
 //     })
 // })
+app.get('/dbd', (req, res) => {
+    Killer.find({}).then((allKillers) => {
+        Survivor.find({}).then((allSurvivors) => {
+            res.render('index.ejs', {
+                killers: allKillers,
+                survivors: allSurvivors
+            })
+        })
+    })
+})
 // app.get('/dbd/', (req, res) => {
 //     Survivor.find({}).then(() => {
 //         res.render()
@@ -64,14 +69,15 @@ app.get('/dbd/new', (req, res) => {
 })
 // === SHOW === //
 app.get('/dbd/killer/:id', (req, res) => {
-    Killer.findById(req.params._id).then((killer) => {
+    console.log(req.params);
+    Killer.findById(req.params.id).then((killer) => {
         res.render('showKiller.ejs', {
             info: killer
         })
     })
 })
 app.get('/dbd/survivor/:id', (req, res) => {
-    Survivor.findById(req.params._id).then((survivor) => {
+    Survivor.findById(req.params.id).then((survivor) => {
         res.render('showSurvivor.ejs', {
             info: survivor
         })
@@ -80,19 +86,19 @@ app.get('/dbd/survivor/:id', (req, res) => {
 // === UPDATE === //
 app.get('/dbd/killer/:id/edit', (req, res) => {
     Killer.findById(req.params.id).then(() => {
-        res.render('edit.ejs')
+        res.render('editK.ejs')
     })
 })
 app.get('/dbd/survivor/:id/edit', (req, res) => {
     Survivor.findById(req.params.id).then(() => {
-        res.render('edit.ejs')
+        res.render('editS.ejs')
     })
 })
 
 // ======= ACTION ROUTES ======= //
 // === POST === //
 app.post('/dbd', (req, res) => {
-    Killer.post(req.body).then((newKiller) => {
+    Killer.create(req.body).then((newKiller) => {
         res.redirect('/dbd')
     })
 })

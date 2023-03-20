@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Document</title>
 </head>
-<body class="container has-text-danger-dark has-background-grey-dark">
+<body class="has-text-danger-dark has-background-grey-dark">
     <h1 class="is-size-1 is-uppercase has-text-centered has-background-grey-darker">Dead By Daylight</h1>
+    <form action="/dbd/new">
+        <input type="submit" value="Add New Characters">
+    </form>
     <main class="section container columns">
         <div id="survivor" class="column">
             <h1 class="is-size-3 has-background-grey-darker has-text-centered">Survivors</h1>
             <ul>
                 <div>
                     <% for (let i = 0; i < survivors.length; i++) {%>
+                        <% console.log(survivors[i]) %>
                         <div>
                             <h1 class="is-size-5"><%=survivors[i].name%></h1>
-                            <a href="/dbd/survivor/<%=survivors[i]._id%>">
+                            <a href="/dbd/survivor/<%=survivors[i].id%>">
                                 <img src="<%=survivors[i].img%>">
                             </a>
                         </div>
