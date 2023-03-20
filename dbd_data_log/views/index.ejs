@@ -17,10 +17,18 @@
                 <div>
                     <% for (let i = 0; i < survivors.length; i++) {%>
                         <div>
-                            <h1><%=survivors[i].name%></h1>
+                            <h1 class="is-size-5"><%=survivors[i].name%></h1>
                             <a href="/dbd/survivor/<%=survivors[i]._id%>">
                                 <img src="<%=survivors[i].img%>">
                             </a>
+                        </div>
+                        <div class="columns">
+                            <form class="column" action="/dbd/survivor/<%=survivors[i].id%>/edit">
+                                <input class="button" type="submit" value="Edit">
+                            </form>
+                            <form class="column" action="/dbd/survivor/<%=survivors[i].id%>?_method=DELETE" method="POST">
+                                <input class="button" type="submit" value="DELETE">
+                            </form>
                         </div>
                     <%}%>
                 </div>
@@ -32,10 +40,18 @@
                 <div>
                     <% for (let i = 0; i < killers.length; i++) {%>
                         <div>
-                            <h1><%=killers[i].name%></h1>
+                            <h1 class="is-size-5"><%=killers[i].name%></h1>
                             <a href="/dbd/killer/<%=killers[i]._id%>">
                                 <img src="<%=killers[i].img%>">
                             </a>
+                        </div>
+                        <div class="columns">
+                            <form class="column" action="/dbd/killer/<%=killers[i].id%>/edit">
+                                <input class="button" type="submit" value="Edit">
+                            </form>
+                            <form class="column" action="/dbd/killer/<%=killers[i].id%>?_method=DELETE" method="POST">
+                                <input class="button" type="submit" value="DELETE">
+                            </form>
                         </div>
                     <%}%>
                 </div>

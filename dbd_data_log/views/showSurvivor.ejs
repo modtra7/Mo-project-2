@@ -9,10 +9,21 @@
 <body>
     <h1>Survivor</h1>
     <div>
-        <div></div>
         <div>
-            <h1><%=info.name%></h1>
+            <ul>
+                <li><%=info.name%></li>
+                <li><%=info.role%></li>
+                <li><%=info.lore%></li>
+            </ul>
         </div>
+        <div>
+            <img src="<%=info.img%>">
+        </div>
+    </div>
+    <div>
+        <form action="/dbd">
+            <input type="submit" value="Home">
+        </form>
     </div>
 </body>
 </html>
