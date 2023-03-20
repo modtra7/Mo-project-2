@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>Dead By Daylight</h1>
-    <main>
-        <div>
-            <h1>Survivor</h1>
+<body class="container has-text-danger-dark has-background-grey-dark">
+    <h1 class="is-size-1 is-uppercase has-text-centered has-background-grey-darker">Dead By Daylight</h1>
+    <main class="section container columns">
+        <div id="survivor" class="column">
+            <h1 class="is-size-3 has-background-grey-darker has-text-centered">Survivors</h1>
             <ul>
                 <div>
                     <% for (let i = 0; i < survivors.length; i++) {%>
                         <div>
-                            <a href="/dbd/survivors/<%=survivors[i].id%>">
+                            <h1><%=survivors[i].name%></h1>
+                            <a href="/dbd/survivor/<%=survivors[i]._id%>">
                                 <img src="<%=survivors[i].img%>">
                             </a>
                         </div>
@@ -23,13 +26,14 @@
                 </div>
             </ul>
         </div>
-        <div>
-            <h1>Killer</h1>
+        <div class="column">
+            <h1 class="is-size-3 has-background-grey-darker has-text-centered">Killers</h1>
             <ul>
                 <div>
                     <% for (let i = 0; i < killers.length; i++) {%>
                         <div>
-                            <a href="/dbd/killers/<%=killers[i].id%>">
+                            <h1><%=killers[i].name%></h1>
+                            <a href="/dbd/killer/<%=killers[i]._id%>">
                                 <img src="<%=killers[i].img%>">
                             </a>
                         </div>

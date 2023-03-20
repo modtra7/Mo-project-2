@@ -1,8 +1,8 @@
 module.exports = [
     {
         name: 'Dwight Farifield',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmnQLfFzPPau27VyQ6rTkEmVL4wHWdLjuf-7pSlfTbSv1jWPW2iMugdmsme7a-TzYnZE&usqp=CAU',
         role: 'survivor',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmnQLfFzPPau27VyQ6rTkEmVL4wHWdLjuf-7pSlfTbSv1jWPW2iMugdmsme7a-TzYnZE&usqp=CAU',
         perks: {
             perk_1: 'Bond',
             perk_2: 'Prove Thyself',
@@ -45,8 +45,8 @@ module.exports = [
     },
     {
         name: 'William "Bill" Overbeck',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd3TjIbwe6qSSqQ1AsR74wP5odxL0l7E2deGGmqeChPVxg_iYPSC84iXSm4U9agJjkzA&usqp=CAU',
         role: 'survivor',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLd3TjIbwe6qSSqQ1AsR74wP5odxL0l7E2deGGmqeChPVxg_iYPSC84iXSm4U9agJjkzA&usqp=CAU',
         perks: {
             perk_1: 'Left Behind',
             perk_2: 'Borrowed Time',
