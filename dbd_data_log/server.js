@@ -91,12 +91,12 @@ app.get('/dbd/survivor/:id/edit', (req, res) => {
 
 // ======= ACTION ROUTES ======= //
 // === POST === //
-app.get('/dbd', (req, res) => {
-    Killer.create(req.body).then((newKiller) => {
+app.post('/dbd', (req, res) => {
+    Killer.post(req.body).then((newKiller) => {
         res.redirect('/dbd')
     })
 })
-app.get('/dbd', (req, res) => {
+app.post('/dbd', (req, res) => {
     Survivor.create(req.body).then((newSurvivor) => {
         res.redirect('/dbd')
     })
